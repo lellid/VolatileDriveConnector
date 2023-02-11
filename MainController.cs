@@ -345,6 +345,7 @@ namespace VolatileDriveConnector
       tw.WriteStartDocument();
       {
         tw.WriteStartElement("Settings");
+        tw.WriteAttributeString("Version", "1");
         {
           tw.WriteStartElement("Users");
           tw.WriteAttributeString("Count", XmlConvert.ToString(_userConnections.Count));
@@ -390,6 +391,7 @@ namespace VolatileDriveConnector
 
         tr.MoveToContent();
 
+        var versionNumber = XmlConvert.ToInt32(tr.GetAttribute("Version"));
         tr.ReadStartElement("Settings");
         {
 
