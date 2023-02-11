@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <Nullable>enable</Nullable>
+	  <LangVersion>preview</LangVersion>
+    <UseWPF>true</UseWPF>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    	  
+	  <!-- If using CSWin instead of the native methods defined in the project, then define a constant 'UseCsWin' -->
+	  <!-- <DefineConstants>UseCsWin</DefineConstants> -->
+  </PropertyGroup>
+ 
+	<!-- If using CSWin instead of the native methods defined in the project, then uncomment the next statements -->
+	<!--
+  <ItemGroup >
+    <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.2.188-beta">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  -->
+
+  <ItemGroup>
+    <None Remove="Images\VolatileDriveConnector.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\VolatileDriveConnector.ico" />
+  </ItemGroup>
+
+</Project>

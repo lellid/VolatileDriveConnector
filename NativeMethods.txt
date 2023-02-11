@@ -1,0 +1,3 @@
+﻿WNetAddConnection2
+WNetAddConnection3
+WNetCancelConnection2
