@@ -10,6 +10,7 @@
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <Title>VolatileDriveConnector</Title>
     <Description>Connects to multiple network shares using another user name, and disconnects by timer, direct user interaction, lockscreen and when closing the application.</Description>
+     <ApplicationIcon>Images/VolatileDriveConnector.ico</ApplicationIcon>
     	  
 	  <!-- If using CSWin instead of the native methods defined in the project, then define a constant 'UseCsWin' -->
 	  <!-- <DefineConstants>UseCsWin</DefineConstants> -->
